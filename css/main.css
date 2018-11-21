@@ -57,13 +57,15 @@ blockquote {
     }
 
     h1, p {
-      margin: 0 0 1.3rem;
+      margin: 0 0 .5rem;
       padding-left: .5rem;
-      padding-top: 1rem;
+      padding-right: .5rem;
+      padding-bottom: .875rem;
     }
 
     h1 {
       margin-bottom: 0;
+      padding-bottom: 0;
     }
 
     article > p:last-child {
@@ -74,10 +76,18 @@ blockquote {
       padding-top: 0;
     }
 
-  blockquote > p {
-    padding-left: 0;
-  }
+    article header {
+      padding-top: 1rem;
+      margin-bottom: 1.2rem;
+    }
 
+    blockquote > p {
+      padding-left: 0;
+    }
+
+  article ol {
+    padding-left: 1.4rem;
+  }
 
 @media only screen and (min-width: 25em) {
 
@@ -140,6 +150,3 @@ blockquote {
   html {
     font-size: 130%;
   }
-
-
-}
