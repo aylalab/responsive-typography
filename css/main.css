@@ -49,7 +49,7 @@ blockquote {
   color: #999;
 }
 
-@media only screen and (min-width: 320px) {
+@media only screen and (min-width: 1em) {
 
   html {
       font-size: 100%;
