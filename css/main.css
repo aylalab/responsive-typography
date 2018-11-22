@@ -6,12 +6,11 @@
 
 html {
   box-sizing: border-box;
-  font-family: "Crimson Text", serif;
   -moz-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
-  font: normal 100%/1.3 serif;
+  font: normal 100%/1.3  "Crimson Text", serif;
   color: #222;
 }
 
@@ -34,6 +33,8 @@ article h1 {
 
 article header {
   border-bottom: 1px solid #999;
+  margin: 1.3rem;
+  margin-left: 1rem;
 }
 
 article header p {
@@ -42,6 +43,7 @@ article header p {
 
 article > p:last-child {
   border-bottom: 1px solid #999;
+  padding-bottom: 1.3rem;
 }
 
 blockquote {
@@ -59,7 +61,11 @@ blockquote {
 h1, p {
   margin: 0 0 1.3rem;
   padding-left: 1rem;
-  padding-right: .875rem;
+  padding-right: 1rem;
+}
+
+article p {
+  padding-left: 1rem;
 }
 
 h1 {
@@ -68,25 +74,13 @@ h1 {
   padding-left: 0;
 }
 
-article > p:last-child {
-  padding-bottom: 1.3rem;
-}
-
 article header > p {
   padding-top: 0;
   padding-bottom: 0;
   padding-left: 0;
 }
 
-article header {
-  margin: 1.3rem;
-}
-
-article li {
-  padding-left: 1rem;
-}
-
-ol {
+article ol {
   margin: 1rem;
   padding-left: 1rem;
   margin-bottom: 1.3rem;
@@ -99,24 +93,25 @@ article li {
 @media only screen and (min-width: 25em) {
 
   html {
-     font-size: 100%;
-     line-height: 1.3;
-   }
+    font-size: 100%;
+    line-height: 1.3;
+  }
 
-   h1,
-   p {
-     margin: 0 0 1.3rem;
-     padding-left: .5rem;
-     padding-right: .5rem;
-   }
+  h1,
+  p {
+    margin: 0 0 1.3rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
 
-   h1 {
-     margin-bottom: 0;
-   }
+  h1 {
+    margin-bottom: 0;
+    padding-left: 0;
+  }
 
- }
+}
 
- @media only screen and (min-width: 38em) {
+@media only screen and (min-width: 38em) {
 
   html {
     font-size: 110%;
@@ -126,8 +121,18 @@ article li {
   h1,
   p {
     margin: 0 0 1.4rem;
-    padding-left: .5rem;
-    padding-right: .5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  h1 {
+    padding-left: 0;
+    margin-bottom: 0;
+  }
+
+  article header {
+    margin: 1.4rem;
+    margin-left: 1rem;
   }
 
 }
@@ -142,12 +147,22 @@ article li {
   h1,
   p {
     margin: 0 0 1.5rem;
-    padding-left: 2rem;
-    padding-right: 1rem;
+    padding-left: 3rem;
+    padding-right: 2rem;
   }
 
   article ol {
     padding-left: 2rem;
+  }
+
+  h1 {
+    margin-bottom: 0;
+    padding-left: 0;
+  }
+
+  article header {
+    margin: 1.5rem;
+    margin-left: 3rem;
   }
 
 }
@@ -157,3 +172,5 @@ article li {
   html {
     font-size: 130%;
   }
+
+}
